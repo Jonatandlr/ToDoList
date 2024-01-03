@@ -26,7 +26,7 @@ export default function CategoriesList() {
                 setError(true)
                 return
             }
-            const response = await fetch('https://todolistapi-46fv.onrender.com/categories/add', {
+            const response = await fetch('https://todolist-84m2.onrender.com/categories/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

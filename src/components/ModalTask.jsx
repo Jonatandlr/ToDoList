@@ -49,7 +49,7 @@ export default function ModalTask({ setShowModal }) {
                             validationSchema={schemaValid}
                             onSubmit={async (values) => {
                                 // console.log(values.selectedCategories)
-                                await fetch(`https://todolistapi-46fv.onrender.com/notes/add`, {
+                                await fetch(`https://todolist-84m2.onrender.com/notes/add`, {
                                     method: 'POST',
                                     headers: {
                                         'Content-Type': 'application/json'

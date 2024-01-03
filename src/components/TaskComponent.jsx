@@ -26,7 +26,7 @@ export default function TaskComponent({ data }) {
                 <div className='flex items-center'>
                     <button
                         onClick={async() => {
-                            await fetch(`https://todolistapi-46fv.onrender.com/notes/completed/${data.id}`, {
+                            await fetch(`https://todolist-84m2.onrender.com/notes/completed/${data.id}`, {
                                 method: 'PUT',
                                 headers: {
                                     'Content-Type': 'application/json'

@@ -9,7 +9,7 @@ export const TaskProvider = ({ children }) => {
     const [view, setView] = React.useState('all')
 
     const dataCategories = async () => {
-        const response = await fetch('https://todolistapi-46fv.onrender.com/categories')
+        const response = await fetch('https://todolist-84m2.onrender.com/categories')
         const data = await response.json()
         setCategories(data)
     }
@@ -17,7 +17,7 @@ export const TaskProvider = ({ children }) => {
     const [tasks, setTasks] = React.useState([]);
 
     const fetchTasks = async () => {
-        await fetch('https://todolistapi-46fv.onrender.com/notes')
+        await fetch('https://todolist-84m2.onrender.com/notes')
             .then((res) => res.json())
             .then((data) => {
                 setData(data)

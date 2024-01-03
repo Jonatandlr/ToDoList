@@ -44,7 +44,7 @@ export default function ModalEditableTask({ setShowModal, note }) {
                             validationSchema={schemaValid}
                             onSubmit={async (values) => {
 
-                                await fetch(`https://todolistapi-46fv.onrender.com/notes/update/${note.id}`, {
+                                await fetch(`https://todolist-84m2.onrender.com/notes/update/${note.id}`, {
                                     method: 'PUT',
                                     headers: {
                                         'Content-Type': 'application/json'
@@ -106,7 +106,7 @@ export default function ModalEditableTask({ setShowModal, note }) {
                                         type='button'
                                         style={{ transition: 'all .15s ease' }}
                                         onClick={async () => {
-                                            await fetch(`https://todolistapi-46fv.onrender.com/notes/delete/${note.id}`, {
+                                            await fetch(`https://todolist-84m2.onrender.com/notes/delete/${note.id}`, {
                                                 method: 'DELETE',
                                             })
                                             dataCategories()

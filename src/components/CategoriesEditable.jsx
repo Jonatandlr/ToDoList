@@ -6,7 +6,7 @@ function CategoriesEditable({ category }) {
     const {dataCategories,setViewCategory,view,fetchTasks} = useTask()
 
     const handleEliminateCategory = async (event) => {
-        await fetch(`https://todolistapi-46fv.onrender.com/categories/delete/${category.id}`, {
+        await fetch(`https://todolist-84m2.onrender.com/categories/delete/${category.id}`, {
             method: 'DELETE',
         }) 
         dataCategories() 
